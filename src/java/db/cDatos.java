@@ -34,8 +34,8 @@ public class cDatos {
     public cDatos() {
         //poner los datos apropiados
         this.usrBD = "root";
-        this.passBD = "seven";
-        this.urlBD = "jdbc:mysql://127.0.0.1:3306/login";
+        this.passBD = "n0m3l0";
+        this.urlBD = "jdbc:mysql://127.0.0.1:3306/baseproyectoiii";
         this.driverClassName = "com.mysql.jdbc.Driver";
     }
     
