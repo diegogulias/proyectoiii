@@ -11,15 +11,15 @@ package cClasses;
  */
 public class CuentaAlumno extends CuentaGenerica{
     
-    private String _añoIng;
+    private String _anoIng;
     private String _nombreGrupo;
 
-    public String getAñoIng() {
-        return _añoIng;
+    public String getAnoIng() {
+        return _anoIng;
     }
 
-    public void setAñoIng(String _añoIng) {
-        this._añoIng = _añoIng;
+    public void setAnoIng(String _anoIng) {
+        this._anoIng = _anoIng;
     }
 
     public String getNombreGrupo() {

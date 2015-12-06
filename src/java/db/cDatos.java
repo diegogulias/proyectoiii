@@ -34,7 +34,7 @@ public class cDatos {
     public cDatos() {
         //poner los datos apropiados
         this.usrBD = "root";
-        this.passBD = "n0m3l0";
+        this.passBD = "seven";
         this.urlBD = "jdbc:mysql://127.0.0.1:3306/baseproyectoiii";
         this.driverClassName = "com.mysql.jdbc.Driver";
     }
@@ -89,4 +89,9 @@ public class cDatos {
         Statement st = (Statement) this.conn.createStatement();
         return st.executeUpdate(inserta);
     }
+    
+    //extra metodo para regresar un scrollable resultset
+    
+    
+    
 }
