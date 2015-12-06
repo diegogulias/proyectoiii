@@ -174,7 +174,7 @@ public class wsAdminCuentas {
             _rs = _conn.consulta("call sp_getCuentaAlumno(" + id + ");");
             while (_rs.next()) {
                 if (_rs.getString("msj").equals("operacion realizada") == true) {
-                    if (_rs.getString("TipoUsuario").equals("alumno")== true) {
+                    if (_rs.getString("TipoUsuario").equals("alumno") == true) {
                         ca.setAnoIng(_rs.getString("AnoIngreso"));
                         ca.setContra(_rs.getString("Contrasena"));
                         ca.setCorreo(_rs.getString("Correo"));
@@ -191,4 +191,49 @@ public class wsAdminCuentas {
         return ca;
     }
 
+    @WebMethod(operationName = "getCuentaProfesor")
+    public CuentaProfesor getCuentaProfesor(@WebParam(name = "id") int id) {
+        CuentaProfesor cp = new CuentaProfesor();
+        try {
+            _rs = _conn.consulta("call sp_getCuentaProfesor(" + id + ");");
+            while (_rs.next()) {
+                if (_rs.getString("msj").equals("operacion realizada") == true) {
+                    if (_rs.getString("TipoUsuario").equals("profesor") == true) {
+                        cp.setNombre(_rs.getString("NombreUsuario"));
+                        cp.setContra(_rs.getString("Contrasena"));
+                        cp.setCorreo(_rs.getString("Correo"));
+                        cp.setTipo(_rs.getString("TipoUsuario"));
+                        cp.setCed(_rs.getString("noCedula"));
+                        return cp;
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return cp;
+    }
+    
+    @WebMethod(operationName = "getCuentaAdmin")
+    public CuentaGenerica getCuentaAdmin(@WebParam(name = "id") int id) {
+        CuentaGenerica cg = new CuentaGenerica();
+        try {
+            _rs = _conn.consulta("call sp_getCuentaAdministrador(" + id + ");");
+            while (_rs.next()) {
+                if (_rs.getString("msj").equals("operacion realizada") == true) {
+                    if (_rs.getString("TipoUsuario").equals("profesor") == true) {
+                        cg.setNombre(_rs.getString("NombreUsuario"));
+                        cg.setContra(_rs.getString("Contrasena"));
+                        cg.setCorreo(_rs.getString("Correo"));
+                        cg.setTipo(_rs.getString("TipoUsuario"));
+                        return cg;
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return cg;
+    }
+    
 }

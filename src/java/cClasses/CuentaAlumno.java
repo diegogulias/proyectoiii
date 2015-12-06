@@ -14,6 +14,11 @@ public class CuentaAlumno extends CuentaGenerica{
     private String _anoIng;
     private String _nombreGrupo;
 
+    public CuentaAlumno(){
+        this._anoIng = "";
+        this._nombreGrupo = "";
+    }
+    
     public String getAnoIng() {
         return _anoIng;
     }

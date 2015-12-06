@@ -13,6 +13,10 @@ public class CuentaProfesor extends CuentaGenerica{
     
     private String _ced;
 
+    public CuentaProfesor(){
+        this._ced = "";
+    }
+    
     public String getCed() {
         return _ced;
     }

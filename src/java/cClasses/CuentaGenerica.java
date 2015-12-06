@@ -16,6 +16,13 @@ public class CuentaGenerica {
     protected String _contra;
     protected String _correo;
     protected String _tipo;
+    
+    public CuentaGenerica(){
+        this._nombre = "";
+        this._contra = "";
+        this._correo = "";
+        this._tipo = "";
+    }
 
     public String getNombre() {
         return _nombre;

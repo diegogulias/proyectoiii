@@ -4,6 +4,9 @@
     <service name="wsAdminCuentas">
       <implementation-class>ws.wsAdminCuentas</implementation-class>
     </service>
+    <service name="wsEstadisticas">
+      <implementation-class>ws.wsEstadisticas</implementation-class>
+    </service>
   </services>
   <clients/>
 </jax-ws>
