@@ -1,6 +1,6 @@
 <%-- 
-    Document   : signin
-    Created on : 7/12/2015, 10:05:16 PM
+    Document   : cuentaalumno
+    Created on : 7/12/2015, 10:45:14 PM
     Author     : Diego
 --%>
 
@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Registro Alumno</title>
+    <title>Mi cuenta</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet"> 
@@ -51,30 +51,13 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Inicio</a></li>
-                        <li class="dropdown active"><a href="#">Registrate <i class="fa fa-angle-down"></i></a>
-                            <ul role="menu" class="sub-menu">
-                                <li><a href="altaprofesor.jsp">Profesor</a></li>
-                                <li><a href="altaalumno.jsp">Alumno</a></li>
-                            </ul>
+                        <!--ESTO YA NO VALDRIA YA QUE ESTAS EN UNA SESION -->
+                        <li class="dropdown active"><a href="cuentaalumno.jsp">Mi Cuenta <i class="fa fa-angle-down"></i></a>
+                            
                         </li>                    
-                        <li class="dropdown"><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
-                            <ul role="menu" class="sub-menu">
-                                <li><a href="blog.html">Blog Default</a></li>
-                                <li><a href="blogtwo.html">Timeline Blog</a></li>
-                                <li><a href="blogthree.html">1 Column + Left Sidebar</a></li>
-                                <li><a href="blogfour.html">Blog Masonary</a></li>
-                                <li><a href="blogdetails.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="portfolio.html">Portfolio <i class="fa fa-angle-down"></i></a>
-                            <ul role="menu" class="sub-menu">
-                                <li><a href="portfolio.html">Portfolio Default</a></li>
-                                <li><a href="portfoliofour.html">Isotope 3 Columns + Right Sidebar</a></li>
-                                <li><a href="portfolioone.html">3 Columns + Right Sidebar</a></li>
-                                <li><a href="portfoliotwo.html">3 Columns + Left Sidebar</a></li>
-                                <li><a href="portfoliothree.html">2 Columns</a></li>
-                                <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                            </ul>
+                        
+                        <li class="dropdown"><a href="portfolio.html">Mis Estadisticas <i class="fa fa-angle-down"></i></a>
+                            
                         </li>                         
                         <li><a href="signin.jsp" class="btn btn-common">SIGN UP</a></li>                        
                     </ul>
@@ -84,52 +67,60 @@
     </header>
     <!--/#header-->
 
-
     <section id="page-breadcrumb">
         <div class="vertical-center sun">
              <div class="container">
                 <div class="row">
                     <div class="action">
                         <div class="col-sm-12">
-                            <h1 class="title">Iniciar Sesión</h1>
-                            <p>Inicia sesion como Alumno o Profesor</p>
+                            <h1 class="title">Services</h1>
+                            <p>Designed to suit you.</p>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
    </section>
     <!--/#page-breadcrumb-->
 
-    
-    <!--/#action-->
-
-    
-<section id="clients">
-        <div class="container" >
-						
-						<form id="main-contact-form" name="contact-form" method="post" action="">
-							
-                                                                <div class="form-group"><input type="email" name="email" id="email" placeholder="Correo Electrónico" /></div>
-                                                                <div class="form-group"><input type="password" name="password" id="password" placeholder="Contraseña" /></div>
-                                                                <div class="form-group"><center><input type="submit" value="Iniciar Sesión" class="" /></center></div>
-
-                                                                
-                                                                
-							
-						</form>
-					</div>
-     </section>
+    <section id="company-information" class="choose">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0ms">
+                    <img src="images/services/4.png" class="img-responsive" alt="">
+                </div>
+                <div class="col-sm-6 padding-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0ms">
+                    <h2>Mi cuenta:</h2>
+                    <p>Datos Generales de mi cuenta<br /></p>
+                    <ul class="elements">
+                        <li class="wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms"><i class="fa fa-angle-right"></i>nombre usuario</li>
+                        <li class="wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms"><i class="fa fa-angle-right"></i>correo</li>
+                        <li class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms"><i class="fa fa-angle-right"></i>año escolar</li>
+                        <li class="wow fadeInUp" data-wow-duration="600ms" data-wow-delay="400ms"><i class="fa fa-angle-right"></i>contraseña</li>
+                    </ul>
+                    <br><BR>
+                    <a href="#" class="btn btn-common">Dar de Baja</a>
+                                <a></a>
+                                <a href="#" class="btn btn-common">Cambiar Datos</a>
+                                <a></a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+  
     
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center bottom-separator">
-                    <img src="images/home/under.png" class="img-responsive inline" alt="">
+                    <br><br><br><br><br><br>
+                    <img class="img-responsive inline" alt="">
                 </div>
+                
                 <div class="col-sm-12">
                     <div class="copyright-text text-center">
-                        <p>&copy;SiO 2015. All Rights Reserved.</p>
+                        <p>&copy; SiO 2015. All Rights Reserved.</p>
                         <p>Designed by SiO</p>
                     </div>
                 </div>
@@ -142,8 +133,6 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.js"></script>
     <script type="text/javascript" src="js/main.js"></script>   
-   
 </body>
 </html>
