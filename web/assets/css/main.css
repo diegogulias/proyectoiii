@@ -3265,6 +3265,9 @@
 		top: 0;
 		width: 100%;
 		z-index: 100;
+                margin: 0px auto;
+                 position:fixed;
+    top:0px;
 	}
 
 		#header h1 {
